@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.HappyPet" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Ensure that dark mode is not allowed -->
+        <item name="android:forceDarkAllowed" tools:targetApi="Q">false</item>
+    </style>
+
+
+    <style name="Theme.HappyPet" parent="Base.Theme.HappyPet" />
+
+
+    <style name="Theme.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.HappyPet</item>
+    </style>
+</resources>
